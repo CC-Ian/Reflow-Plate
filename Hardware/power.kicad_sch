@@ -3528,6 +3528,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 203.2 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22853ffa-32c3-4e4b-a5f3-a829856f858e")
+		(property "Reference" "D2"
+			(at 203.5175 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SS34"
+			(at 203.5175 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 203.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 203.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 203.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90db1f92-d647-435f-947c-064246a54223")
+		)
+		(pin "1"
+			(uuid "ee142e0e-29e8-4aa8-89c3-576e55d6053c")
+		)
+		(instances
+			(project "Reflow Plate"
+				(path "/49cd4b29-c85a-4a2b-85b7-8d851eb45e3f/984a2abf-7e27-43b4-9e42-972d8cbed76d"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 149.86 102.87 90)
 		(unit 1)
@@ -3756,7 +3825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DFN8_3x3_EP_AOS"
+		(property "Footprint" "footprints:DFN8_3x3_EP_AOS"
 			(at 156.21 85.09 0)
 			(effects
 				(font
@@ -3883,75 +3952,6 @@
 			(project "Reflow Plate"
 				(path "/49cd4b29-c85a-4a2b-85b7-8d851eb45e3f/984a2abf-7e27-43b4-9e42-972d8cbed76d"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 203.2 88.9 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74f291c7-8b37-408d-b72c-e7e0788085ae")
-		(property "Reference" "D2"
-			(at 203.5175 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SS34"
-			(at 203.5175 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 203.2 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c7301a49-b7af-4d1e-89ab-61a5cb8c7826")
-		)
-		(pin "1"
-			(uuid "d71e63a5-ffb6-4767-bcc2-6d9fb3964372")
-		)
-		(instances
-			(project "Reflow Plate"
-				(path "/49cd4b29-c85a-4a2b-85b7-8d851eb45e3f/984a2abf-7e27-43b4-9e42-972d8cbed76d"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5009,7 +5009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 90.17 52.07 0)
 			(effects
 				(font
