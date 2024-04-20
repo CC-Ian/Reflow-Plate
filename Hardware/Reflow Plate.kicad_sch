@@ -3421,6 +3421,12 @@
 		(uuid "7cc50d97-e697-4bef-83d2-020120dc0e52")
 	)
 	(junction
+		(at 180.34 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f7680b9-8b97-4bd8-afb5-a455669b33f4")
+	)
+	(junction
 		(at 236.22 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3449,12 +3455,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e60ccc9e-ece0-429d-82cc-9cade71777ae")
-	)
-	(junction
-		(at 180.34 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff6097c9-74cb-4d7b-8239-d2b6f8a43ed6")
 	)
 	(no_connect
 		(at 36.83 154.94)
@@ -3618,7 +3618,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 27.94) (xy 180.34 27.94)
+			(xy 177.8 30.48) (xy 180.34 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3888,16 +3888,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 27.94) (xy 182.88 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0e449cd-4f14-487c-974e-d95282dc058e")
-	)
-	(wire
-		(pts
 			(xy 39.37 142.24) (xy 39.37 154.94)
 		)
 		(stroke
@@ -4155,6 +4145,16 @@
 			)
 		)
 		(uuid "1966413e-aeaf-4ab6-972e-062f3ee326b2")
+	)
+	(text "theoretically, 22ohm resistors not needed. 10pF caps not needed on resonator.\nfixed boot pull direction.\n"
+		(exclude_from_sim no)
+		(at 339.344 52.832 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "37174a57-573d-416f-a104-bc3c9c1182ee")
 	)
 	(text "Replaceable/interchangeable heater board\nThis is a CONSUMABLE\n\nyou degrade the fibreglass and mask\nwith each run."
 		(exclude_from_sim no)
@@ -4715,7 +4715,7 @@
 	)
 	(global_label "BOOT0"
 		(shape input)
-		(at 177.8 27.94 180)
+		(at 177.8 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4725,7 +4725,7 @@
 		)
 		(uuid "d8054878-d017-45e6-8537-7b52b0170038")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.7067 27.94 0)
+			(at 168.7067 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5658,7 +5658,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 180.34 24.13 0)
+		(at 180.34 34.29 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5666,7 +5666,7 @@
 		(dnp no)
 		(uuid "31588a5f-8871-40bd-8933-ad5051eb3b8a")
 		(property "Reference" "R6"
-			(at 182.88 22.8599 0)
+			(at 177.8 35.5601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5676,7 +5676,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 175.26 24.13 0)
+			(at 185.42 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5685,7 +5685,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 178.562 24.13 90)
+			(at 182.118 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,7 +5694,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 24.13 0)
+			(at 180.34 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5703,7 +5703,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 180.34 24.13 0)
+			(at 180.34 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8265,7 +8265,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 193.04 27.94 0)
+		(at 180.34 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8274,7 +8274,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0847eca-c6a5-434b-b044-8e095849de71")
 		(property "Reference" "#PWR022"
-			(at 193.04 34.29 0)
+			(at 180.34 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8283,7 +8283,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.04 33.02 0)
+			(at 180.34 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8291,7 +8291,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.04 27.94 0)
+			(at 180.34 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8300,7 +8300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 27.94 0)
+			(at 180.34 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8309,7 +8309,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.04 27.94 0)
+			(at 180.34 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9226,7 +9226,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 187.96 27.94 0)
+		(at 180.34 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9235,7 +9235,7 @@
 		(fields_autoplaced yes)
 		(uuid "f73b5ce4-58d9-47f9-82d1-2f69c4fc911d")
 		(property "Reference" "SW2"
-			(at 187.96 20.32 0)
+			(at 187.96 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9244,7 +9244,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 187.96 22.86 0)
+			(at 185.42 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9253,7 +9253,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
-			(at 187.96 22.86 0)
+			(at 185.42 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9262,7 +9262,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 22.86 0)
+			(at 185.42 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9271,7 +9271,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 187.96 27.94 0)
+			(at 180.34 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
